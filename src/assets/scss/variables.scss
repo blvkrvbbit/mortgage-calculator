@@ -1,0 +1,51 @@
+// Variables
+$lime: #d8db2f;
+$slate-900: #133041;
+$slate-700: #4e6e7e;
+$slate-500: #6b94a8;
+$slate-300: #9abed5;
+$slate-100: #e4f4fd;
+$white:#fff;
+$red: #d73328;
+
+// Spacing
+$space-500: 4rem;
+$space-400: 3.2rem;
+$space-300: 2.4rem;
+$space-200: 1.6rem;
+$space-150: 1.2rem;
+$space-100: 0.8rem;
+
+$tablet: 768px;
+
+// Typography
+@mixin text-preset-1 {
+  font-size: 5.6rem;
+  line-height: 125%;
+  letter-spacing: -0.001rem;
+}
+
+@mixin text-preset-2 {
+  font-size: 2.4rem;
+  line-height: 125%;
+  letter-spacing: 0.001rem;
+  font-weight: bold;
+}
+
+@mixin text-preset-3 {
+  font-size: 1.8rem;
+  line-height: 125%;
+  letter-spacing: 0.001rem;
+}
+
+@mixin text-preset-4 {
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0rem;
+}
+
+@mixin text-preset-5 {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0rem;
+}

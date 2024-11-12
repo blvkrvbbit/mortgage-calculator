@@ -1,0 +1,97 @@
+@import "../../assets/scss/variables.scss";
+
+.result-container {
+  background: $slate-900;
+  padding-bottom: $space-500;
+  @media screen and (min-width: $tablet) {
+    margin: 0 auto;
+    border-radius: 0 0 2.4rem 2.4rem;
+    margin-bottom: 4rem;
+    max-width: 100%;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 0;
+    border-bottom-left-radius: 8rem;
+    border-top-right-radius: 2.4rem;
+  }
+}
+
+.result-container .default {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+}
+
+.result-container img {
+  display: block;
+  margin: 4rem auto $space-200 auto;
+  margin-bottom: $space-200;
+}
+
+.result-container h2 {
+  @include text-preset-2;
+  text-align: center;
+  color: $white;
+  margin-bottom: $space-200;
+}
+
+.result-container p {
+  text-align: center;
+  max-width: 32.7rem;
+  @include text-preset-4;
+  color: $slate-300;
+  font-weight: medium;
+  @media screen and (min-width: $tablet) {
+    max-width: 60.8rem;
+  }
+}
+
+.result-container .results {
+  padding-top: $space-300;
+  @media screen and (min-width: 1440px) {
+    padding-top: $space-400;
+  }
+}
+
+.result-container .results h2 {
+  font-weight: bold;
+  text-align: left;
+}
+
+.result-container .results h3 {
+  @include text-preset-4;
+  color: $slate-300;
+  margin-bottom: 0.8rem;
+}
+
+.result-container .results p {
+  text-align: left;
+}
+
+.results .repayment {
+  margin-top: $space-300;
+  background: rgba(0, 0, 0, 0.25);
+
+  padding: $space-300 $space-200;
+  border-top: 0.4rem solid $lime;
+  border-radius: 0.8rem;
+}
+
+.results .monthly-repayment {
+  @include text-preset-1;
+  color: $lime;
+  font-weight: bold;
+}
+
+.divider {
+  height: 0.1rem;
+  background: rgba(154, 190, 213, 0.25);
+  margin: $space-200 0;
+}
+
+.results .repayment-over-term {
+  color: $white;
+  @include text-preset-2;
+}

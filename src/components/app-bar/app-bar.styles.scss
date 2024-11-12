@@ -1,0 +1,39 @@
+@import "../../assets/scss/variables.scss";
+
+.app-bar {
+  // margin-top: $space-400;
+  margin-bottom: $space-300;
+
+  grid-column: span 2;
+  @media screen and (min-width: $tablet) {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 0;
+  }
+}
+
+.logo {
+  @include text-preset-2;
+  margin-bottom: $space-100;
+  color: $slate-900;
+}
+
+.btn-clear {
+  @include text-preset-4;
+  color: $slate-700;
+  text-decoration: underline;
+  // font-weight: bold;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  cursor: pointer;
+}
+
+.btn-clear:hover {
+  color: $slate-900;
+  font-weight: initial;
+}

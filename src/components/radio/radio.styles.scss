@@ -1,0 +1,66 @@
+@import "../../assets/scss/variables.scss";
+
+// .radio-field {
+//   display: flex;
+//   align-items: center;
+//   border: 0.1rem solid $slate-500;
+//   border-radius: 0.4rem;
+//   height: 4.8rem;
+//   margin-bottom: $space-300;
+// }
+
+// .radio-field label {
+//   margin-bottom: 0;
+// }
+
+// input[type="radio"] {
+//   accent-color: $lime;
+// }
+
+.radio-field {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  color: $slate-900;
+  border: 0.1rem solid $slate-500;
+  border-radius: 0.4rem;
+  height: 4.8rem;
+  @include text-preset-3;
+  font-weight: bold;
+  margin-bottom: $space-150;
+  cursor: pointer;
+}
+
+.radio-field:hover {
+  border: 0.1rem solid $lime;
+}
+
+// .radio-field.error {
+//   border: 0.1rem solid $red;
+// }
+.radio-field label {
+  margin-bottom: 0;
+  margin-left: $space-150;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-clip: content-box;
+  border: 2px solid $slate-700;
+  background-color: $white;
+  margin-left: $space-200;
+}
+
+input[type="radio"]:checked {
+  background-color: $lime;
+  padding: 4px;
+  border: 0.225rem solid $lime;
+}
+
+.radio-field:has(input[type="radio"]:checked) {
+  background: rgba(216, 219, 47, 0.15);
+}
